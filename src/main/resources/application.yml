@@ -1,0 +1,24 @@
+spring: 
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+    
+  datasource:
+    username: root
+    password: Honnu@6268
+    url: jdbc:mysql://localhost:3306/bdplus_task_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#springfox:
+#  documentation:
+#    swagger-ui:
+#      enabled: true
+
